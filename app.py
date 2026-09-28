@@ -15,7 +15,7 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* ===== NỀN ===== */
+/* ===== NỀN TOÀN BỘ ỨNG DỤNG ===== */
 
 .stApp {
     background-image:
@@ -23,14 +23,13 @@ st.markdown("""
             rgba(255, 248, 240, 0.88),
             rgba(255, 248, 240, 0.88)
         ),
-        
+        url("mina.jpg");
 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
-    font-size: 17px;
 }
+
 
 
 /* ===== TIÊU ĐỀ CHÍNH ===== */
