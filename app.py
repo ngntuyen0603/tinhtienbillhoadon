@@ -9,11 +9,13 @@ st.set_page_config(
 )
 
 # =========================================================
-# 🎨 GIAO DIỆN NỀN
+# 🎨 GIAO DIỆN NHÀ HÀNG
 # =========================================================
 
 st.markdown("""
 <style>
+
+/* ===== NỀN ===== */
 
 .stApp {
     background-image:
@@ -26,22 +28,32 @@ st.markdown("""
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+
+    font-size: 17px;
 }
 
 
-/* ===== TIÊU ĐỀ ===== */
+/* ===== TIÊU ĐỀ CHÍNH ===== */
 
 h1 {
-    color: #7B3F00;
-    font-weight: 800;
+    color: #7B3F00 !important;
+    font-size: 34px !important;
+    font-weight: 800 !important;
 }
 
+
+/* ===== TIÊU ĐỀ PHỤ ===== */
+
 h2 {
-    color: #8B4513;
+    color: #8B4513 !important;
+    font-size: 28px !important;
+    font-weight: 800 !important;
 }
 
 h3 {
-    color: #A0522D;
+    color: #8B4513 !important;
+    font-size: 23px !important;
+    font-weight: 700 !important;
 }
 
 
@@ -55,27 +67,77 @@ section[data-testid="stSidebar"] {
     );
 }
 
+
+/* Chữ Sidebar */
+
 section[data-testid="stSidebar"] * {
-    color: white;
+    color: #3E2723 !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
 }
 
 
-/* ===== NÚT ===== */
+/* ===== RADIO / MENU SIDEBAR ===== */
+
+section[data-testid="stSidebar"] label {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+
+
+/* ===== NÚT BẤM ===== */
 
 .stButton > button {
+    font-size: 17px !important;
+    font-weight: 800 !important;
+
     border-radius: 10px;
-    font-weight: bold;
     border: none;
-    padding: 10px 15px;
+
+    padding: 10px 18px;
 }
 
 
-/* ===== Ô THỐNG KÊ ===== */
+/* ===== Ô NHẬP ===== */
+
+input {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ===== SELECTBOX ===== */
+
+div[data-baseweb="select"] {
+    font-size: 17px !important;
+    font-weight: 600 !important;
+}
+
+
+/* ===== METRIC ===== */
 
 div[data-testid="stMetric"] {
     background-color: rgba(255, 255, 255, 0.88);
-    padding: 15px;
+
+    padding: 18px;
+
     border-radius: 15px;
+}
+
+
+/* Số trong Metric */
+
+div[data-testid="stMetricValue"] {
+    font-size: 27px !important;
+    font-weight: 800 !important;
+}
+
+
+/* Tên Metric */
+
+div[data-testid="stMetricLabel"] {
+    font-size: 17px !important;
+    font-weight: 700 !important;
 }
 
 
@@ -86,9 +148,23 @@ div[data-testid="stDataFrame"] {
     overflow: hidden;
 }
 
+
+/* ===== TEXT THƯỜNG ===== */
+
+p {
+    font-size: 17px !important;
+}
+
+
+/* ===== CAPTION ===== */
+
+.stCaption {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
-
 
 # =========================================================
 # 🏠 LOGO - GIỮ NGUYÊN KÍCH THƯỚC BAN ĐẦU
