@@ -547,7 +547,7 @@ if page == "🍽️ Order":
                     bill = ""
 
                     bill += "====================================\n"
-                    bill += "       NHÀ HÀNG NGỌC TUYẾN\n"
+                    bill += "       NHÀ HÀNG BÌNH DÂN\n"
                     bill += "====================================\n"
 
                     bill += (
