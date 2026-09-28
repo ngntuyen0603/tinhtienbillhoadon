@@ -18,11 +18,7 @@ st.markdown("""
 /* ===== NỀN TOÀN BỘ ỨNG DỤNG ===== */
 
 .stApp {
-    background-image:
-        linear-gradient(
-            rgba(255, 248, 240, 0.88),
-            rgba(255, 248, 240, 0.88)
-        ),
+    
         url("mina.jpg");
 
     background-size: cover;
