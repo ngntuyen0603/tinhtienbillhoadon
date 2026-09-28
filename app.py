@@ -397,12 +397,12 @@ if page == "🍽️ Order":
             )
 
 
-            if voucher == "NGOC10 - Giảm 10%":
+            if voucher == "BD10 - Giảm 10%":
 
                 phan_tram_giam = 10
 
 
-            elif voucher == "NGOC15 - Giảm 15%":
+            elif voucher == "BD15 - Giảm 15%":
 
                 phan_tram_giam = 15
 
