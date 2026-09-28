@@ -257,7 +257,7 @@ page = st.sidebar.radio(
 
 if page == "🍽️ Order":
 
-    st.title("🍽️ Hệ thống Order Nhà Hàng_Ngọc Tuyến")
+    st.title("🍽️ Hệ thống Order Nhà Hàng_Bình Dân")
 
     st.caption(
         "Ghi nhận order nhanh chóng và chính xác theo thời gian thực"
@@ -391,8 +391,8 @@ if page == "🍽️ Order":
                 "Chọn mã giảm giá",
                 [
                     "Không sử dụng",
-                    "NGOC10 - Giảm 10%",
-                    "NGOC15 - Giảm 15%"
+                    "BD10 - Giảm 10%",
+                    "BD15 - Giảm 15%"
                 ]
             )
 
