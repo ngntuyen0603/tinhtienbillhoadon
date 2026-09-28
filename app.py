@@ -15,8 +15,6 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* ===== NỀN TOÀN BỘ ỨNG DỤNG ===== */
-
 .stApp {
     background-image:
         linear-gradient(
@@ -57,15 +55,12 @@ section[data-testid="stSidebar"] {
     );
 }
 
-
-/* Chữ trong sidebar */
-
 section[data-testid="stSidebar"] * {
     color: white;
 }
 
 
-/* ===== NÚT BẤM ===== */
+/* ===== NÚT ===== */
 
 .stButton > button {
     border-radius: 10px;
@@ -91,25 +86,15 @@ div[data-testid="stDataFrame"] {
     overflow: hidden;
 }
 
-
-/* ===== Ô NHẬP DỮ LIỆU ===== */
-
-div[data-baseweb="select"] > div {
-    border-radius: 10px;
-}
-
 </style>
 """, unsafe_allow_html=True)
 
 
 # =========================================================
-# 🏠 LOGO NHÀ HÀNG
+# 🏠 LOGO - GIỮ NGUYÊN KÍCH THƯỚC BAN ĐẦU
 # =========================================================
 
-st.image(
-    "logo1.jpg",
-    width=180
-)
+st.image("logo1.jpg")
 
 
 # =========================================================
