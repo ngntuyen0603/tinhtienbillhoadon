@@ -3,23 +3,120 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
-# =========================================================
-# CẤU HÌNH TRANG
-# =========================================================
-
 st.set_page_config(
     page_title="Order Nhà Hàng",
     layout="wide"
 )
 
-st.image("logo1.jpg")
+# =========================================================
+# 🎨 GIAO DIỆN NỀN
+# =========================================================
 
-# Đường dẫn file dữ liệu
+st.markdown("""
+<style>
+
+/* ===== NỀN TOÀN BỘ ỨNG DỤNG ===== */
+
+.stApp {
+    background-image:
+        linear-gradient(
+            rgba(255, 248, 240, 0.88),
+            rgba(255, 248, 240, 0.88)
+        ),
+        url("chi.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* ===== TIÊU ĐỀ ===== */
+
+h1 {
+    color: #7B3F00;
+    font-weight: 800;
+}
+
+h2 {
+    color: #8B4513;
+}
+
+h3 {
+    color: #A0522D;
+}
+
+
+/* ===== SIDEBAR ===== */
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(
+        180deg,
+        #4B1F0F,
+        #8B4513
+    );
+}
+
+
+/* Chữ trong sidebar */
+
+section[data-testid="stSidebar"] * {
+    color: white;
+}
+
+
+/* ===== NÚT BẤM ===== */
+
+.stButton > button {
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+}
+
+
+/* ===== Ô THỐNG KÊ ===== */
+
+div[data-testid="stMetric"] {
+    background-color: rgba(255, 255, 255, 0.88);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+/* ===== BẢNG ===== */
+
+div[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* ===== Ô NHẬP DỮ LIỆU ===== */
+
+div[data-baseweb="select"] > div {
+    border-radius: 10px;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+# =========================================================
+# 🏠 LOGO NHÀ HÀNG
+# =========================================================
+
+st.image(
+    "logo1.jpg",
+    width=180
+)
+
+
+# =========================================================
+# 📁 FILE DỮ LIỆU
+# =========================================================
+
 CSV_FILE = "history.csv"
-
-# =========================================================
-# THỰC ĐƠN
-# =========================================================
 
 menu = {
     "Đồ ăn": {
