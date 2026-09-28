@@ -50,8 +50,8 @@ h3 {
 section[data-testid="stSidebar"] {
     background: linear-gradient(
         180deg,
-        #4B1F0F,
-        #8B4513
+        #D8B08C,
+        #C99A72
     );
 }
 
