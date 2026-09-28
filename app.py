@@ -23,7 +23,7 @@ st.markdown("""
             rgba(255, 248, 240, 0.88),
             rgba(255, 248, 240, 0.88)
         ),
-        
+        url("mina.jpg");
 
     background-size: cover;
     background-position: center;
