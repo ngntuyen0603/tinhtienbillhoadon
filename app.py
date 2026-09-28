@@ -257,7 +257,7 @@ page = st.sidebar.radio(
 
 if page == "🍽️ Order":
 
-    st.title("🍽️ Hệ thống chọn món Nhà Hàng_Bình Dân")
+    st.title("🍽️ Hệ thống gọi món Nhà Hàng_Bình Dân")
 
     st.caption(
         "Ghi nhận order nhanh chóng và chính xác theo thời gian thực"
