@@ -320,7 +320,7 @@ page = st.sidebar.radio(
 
 if page == "🍽️ Order":
 
-    st.title("🍽️ Hệ thống gọi món Nhà Hàng_Bình Dân")
+    st.title("🍽️ Hệ thống gọi món Nhà Hàng_LUMÉ")
 
     st.caption(
         "Ghi nhận order nhanh chóng và chính xác theo thời gian thực"
@@ -454,18 +454,18 @@ if page == "🍽️ Order":
                 "Chọn mã giảm giá",
                 [
                     "Không sử dụng",
-                    "BD10 - Giảm 10%",
-                    "BD15 - Giảm 15%"
+                    "LUMÉ10 - Giảm 10%",
+                    "LUMÉ15 - Giảm 15%"
                 ]
             )
 
 
-            if voucher == "BD10 - Giảm 10%":
+            if voucher == "LUMÉ10 - Giảm 10%":
 
                 phan_tram_giam = 10
 
 
-            elif voucher == "BD15 - Giảm 15%":
+            elif voucher == "LUMÉ15 - Giảm 15%":
 
                 phan_tram_giam = 15
 
@@ -610,7 +610,7 @@ if page == "🍽️ Order":
                     bill = ""
 
                     bill += "=======================================\n"
-                    bill += "          NHÀ HÀNG BÌNH DÂN\n"
+                    bill += "          NHÀ HÀNG LUMÉ\n"
                     bill += "=======================================\n"
 
                     bill += (
