@@ -826,13 +826,12 @@ elif page == "🔑 Admin":
     # =====================================================
 
     tab1, tab2, tab3 = st.tabs(
-        [ "📋 Danh sách thực đơn",
-          "💰 Doanh thu & Nhật ký giao dịch", 
-          "📊 Thống kê & Phân tích", 
-          "🧾 Quản lý hóa đơn", 
-        ]
-    )
-
+    [
+        "📋 Danh sách thực đơn",
+        "💰 Doanh thu & Nhật ký giao dịch",
+        "📊 Thống kê & Phân tích bán hàng REAL-TIME",
+    ]
+)
     # =====================================================
     # TAB 1 - MENU
     # =====================================================
