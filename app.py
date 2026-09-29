@@ -168,10 +168,7 @@ p {
 # =========================================================
 # 🏠 LOGO - GIỮ NGUYÊN KÍCH THƯỚC BAN ĐẦU
 # =========================================================
-# 🖼️ HÌNH ẢNH Ở GIỮA MÀN HÌNH
-    col_left, col_center, col_right = st.columns([1, 2, 1])
 
-    with col_center:
 st.image("logo1.jpg")
 
 
