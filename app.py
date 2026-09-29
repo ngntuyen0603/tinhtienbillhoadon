@@ -1484,7 +1484,7 @@ elif page == "🔑 Admin":
                 "Chưa có dữ liệu giao dịch để thống kê. "
                 "Hãy tiến hành thanh toán một vài đơn hàng trước."
             )
-```python
+
     # ==========================================
     # TAB 4: QUẢN LÝ HÓA ĐƠN
     # ==========================================
