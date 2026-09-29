@@ -237,6 +237,69 @@ if "history" not in st.session_state:
 if "admin_logged_in" not in st.session_state:
     st.session_state.admin_logged_in = False
 
+if "admin_logged_in" not in st.session_state: 
+    st.session_state.admin_logged_in = False 
+
+
+# =========================================================
+# 👤 XÁC NHẬN NHÂN VIÊN TRƯỚC KHI VÀO ORDER
+# =========================================================
+
+if "employee_name" not in st.session_state:
+    st.session_state.employee_name = None
+
+employees = [
+    "👨‍🍳 Nhân viên A",
+    "👩‍🍳 Nhân viên B",
+    "👨‍🍳 Nhân viên C",
+    "👩‍🍳 Nhân viên D"
+]
+
+if st.session_state.employee_name is None:
+
+    st.markdown(
+        """
+        <div style="
+            text-align:center;
+            padding:40px;
+            background:rgba(255,255,255,0.92);
+            border-radius:20px;
+            margin-top:60px;
+        ">
+            <h1>🔐 XÁC NHẬN NHÂN VIÊN</h1>
+            <p style="font-size:20px;">
+                Vui lòng chọn tên nhân viên để bắt đầu sử dụng hệ thống
+            </p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+    col_left, col_center, col_right = st.columns([1, 2, 1])
+
+    with col_center:
+
+        employee_selected = st.selectbox(
+            "👤 Chọn tên nhân viên",
+            employees
+        )
+
+        if st.button(
+            "✅ Xác nhận vào hệ thống",
+            use_container_width=True
+        ):
+
+            st.session_state.employee_name = employee_selected
+
+            st.success(
+                f"Xin chào {employee_selected}! "
+                "Chúc bạn làm việc hiệu quả."
+            )
+
+            st.rerun()
+
+    st.stop()
+
 
 # =========================================================
 # THANH ĐIỀU HƯỚNG
@@ -562,6 +625,10 @@ if page == "🍽️ Order":
                         f"Khách hàng: {customer_name}\n"
                     )
 
+                    bill += (
+                        f"Nhân viên phục vụ: "
+                        f"{st.session_state.employee_name}\n"
+                    )
                     bill += (
                         f"Bàn: {table_number}\n"
                     )
