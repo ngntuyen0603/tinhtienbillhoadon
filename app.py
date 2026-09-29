@@ -771,7 +771,7 @@ elif page == "🔑 Admin":
 
             if login_submitted:
 
-                if password == "123456":
+                if password == "binh dan":
 
                     st.session_state.admin_logged_in = True
 
